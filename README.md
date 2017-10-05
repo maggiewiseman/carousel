@@ -1,4 +1,9 @@
 # Carousel
+
+## See it live
+<a href="https://eat-local-pledge.herokuapp.com/" target="_blank">here</a>  and <a href="http://mwiseman.com/projects/carousel/" target="_blank">here
+
+## How it works
 Built an image carousel with vanilla JavaScript. Images move every 5 seconds and always appear to come from the right side of the screen. The dots at the bottom allow for the user to navigate to a particular image. The image will still appear to come from the right and the images will continue to animate after 5 seconds starting with the chosen image. The hardest part was getting the right images to slide in and slide out at the right time. It was like herding cats.
 
 In general, manipulation of images is done by adding and removing class names. To get a hold of the images I collected them by Javascript's getElementsByClassName which returns and array of elements that have the requested calss name. 
@@ -11,4 +16,4 @@ The dots at the bottom are clickable. I chose event delegation for this by wrapp
 
 When a dot is clicked it is important to end the timeout that is currently underway so that you get a full 5 seconds of each image.  This is done by clearing the timeout when a dot is clicked, changing which images is considered the next and then calling the moveImages function again which restarts the animation. 
 
-See it used <a href="https://eat-local-pledge.herokuapp.com/" target="_blank">here</a>  and <a href="http://mwiseman.com/projects/carousel/" target="_blank">here
+
